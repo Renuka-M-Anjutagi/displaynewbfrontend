@@ -1,12 +1,6 @@
-import React from 'react'
-import Layout from '../components/layout/Layout'
-import Newcard from './Newcard';
-import Popularproject from './Popularproject';
-import Testmonial from './testmonial';
-import Gallery from './Gallery';
+import React from 'react';
 import Products from './Products';
 import Footer from '../components/layout/Footer';
-import Menu from '../components/layout/Menu';
 import Header from '../components/layout/Header';
 
 

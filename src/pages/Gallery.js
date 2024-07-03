@@ -103,7 +103,7 @@ const Gallery = () => {
               </div>
             </div>
             <div className='rightContent'>
-              <img src='painter_imm.png'></img>
+              <img src='/images/painter_imm.png'></img>
             </div>
         </div>
         

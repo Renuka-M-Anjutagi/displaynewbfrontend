@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
- 
-function DisplayAllproducts() {
+import Product from "../components/layout/Product";
+const DisplayAllproducts = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const container = {
@@ -12,10 +12,10 @@ function DisplayAllproducts() {
  
     useEffect(() => {
         // API to fetch some dummy data
-        fetch("https://reqres.in/api/users?page=1")
+        fetch("https://dummyjson.com/products")
             .then((resp) => resp.json())
             .then((apiData) => {
-                setData(apiData.data);
+                setData(apiData.products);
                 console.log(apiData);
                 setLoading(false);
             });
@@ -23,65 +23,26 @@ function DisplayAllproducts() {
  
     return (
         <div
-            style={{ textAlign: "center", margin: "auto" }}
+            style={{ textAlign: "center" }}
         >
             <h1 style={{ color: "green" }}>
-                GeeksforGeeks
+                All ProductList
             </h1>
-            <h3>
-                Display values from database without
-                reloading...
-            </h3>
+            
             {loading ? (
                 <h4>Loading Data...</h4>
             ) : (
                 <div style={container}>
                     {data.map((item) => {
                         return (
-                            <div
-                                key={item.id}
-                                style={{
-                                    minWidth: "30rem",
-                                    margin: "1% auto",
-                                    padding: "1%",
-                                    boxShadow:
-                                        "0 2px 5px grey",
-                                    display: "flex",
-                                    fontSize: "larger",
-                                    margin: "1% auto",
-                                }}
-                            >
-                                <span>
-                                    <img
-                                        style={{
-                                            width: "100px",
-                                            borderRadius:
-                                                "50px",
-                                        }}
-                                        src={item.avatar}
-                                    ></img>
-                                </span>
-                                <span
-                                    style={{
-                                        textAlign: "left",
-                                        margin: "auto",
-                                    }}
- 
-                                    // style={style}
-                                >
-                                    <div>
-                                        <b>Name: </b>
-                                        {
-                                            item.first_name
-                                        }{" "}
-                                        {item.last_name} {}
-                                    </div>
-                                    <div>
-                                        <b>Email: </b>{" "}
-                                        {item.email}
-                                    </div>
-                                </span>
+                            <div className="row ">
+
+<Product data={item} title={item.title} price = {item.price}  description = {item.description} image = {item.images} star = {"10"} />
+        
                             </div>
+               
+
+                            
                         );
                     })}
                 </div>

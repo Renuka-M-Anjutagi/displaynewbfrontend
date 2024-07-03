@@ -4,7 +4,6 @@ import { FaRegUser } from "react-icons/fa";
 import { FaSistrix } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 
-import Menu from './Menu';
 const Header = () => { 
   return (
   <>

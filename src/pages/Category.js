@@ -42,7 +42,7 @@ const Category = () => {
     .then(res => res.json())
     .then(data => {
         const arr = data.slice(0, 6);
-        setCategories(arr);
+        setCategories(arr); 
     })
     .catch(err => alert(err))
     .finally(()=>{
@@ -94,7 +94,7 @@ const Category = () => {
                     onClick={() => resetCategory()} 
                     className={`${(selectedCategories.length>0)?'opacity-100':'opacity-0 pointer-events-none'} sticky right-0 w-fit h-full px-5 flex justify-center items-center text-blue-500 bg-white backdrop-blur-lg cursor-pointer hover:text-blue-700 transition-all duration-300`}
                 >
-                    clear
+                    
                 </div>
             </div>
             <ProductList filteredProductList={fileredProductList} loading={loading} />

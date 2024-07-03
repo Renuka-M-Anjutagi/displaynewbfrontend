@@ -3,8 +3,7 @@ import {Link} from 'react-router-dom'
 import { BiLogoFacebook, BiLogoInstagram, BiLogoPinterest , BiLogoYoutube } from "react-icons/bi";
 import { BiLogoPaypal, BiLogoVisa, BiLogoMastercard,BiLogoApple,BiLogoGoogle  } from "react-icons/bi";
 
-
-function Footer() {
+const Footer = () => {
   return (
     <>
 <footer className="footer">

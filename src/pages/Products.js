@@ -1,11 +1,11 @@
 import React from 'react';
 import '../pages/product.css';
 import '../pages/pro.css';
-import '../pages/pro.js';
+
 import { FaBorderAll } from 'react-icons/fa';
 import { FaTable } from 'react-icons/fa';
 import { FaGripLines } from 'react-icons/fa';
-import '../pages/pro.js';
+
 import DisplayAllproducts from './DisplayAllproducts.js';
 
 const DisplayProducts = () => {

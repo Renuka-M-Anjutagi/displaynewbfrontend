@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
-
 import "./styles.css";
 
 function Testmonial() {
