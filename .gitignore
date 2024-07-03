@@ -8,7 +8,10 @@ node_modules
 # testing
 /coverage
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3de2ef5 (My first commit of)
 
 # misc
 .DS_Store
