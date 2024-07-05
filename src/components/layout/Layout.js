@@ -5,10 +5,6 @@ import Gallery from '../../pages/Gallery';
 
 
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-
 const Layout = (props) => {
   return (
     <div>

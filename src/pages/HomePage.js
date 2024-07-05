@@ -1,8 +1,8 @@
-import React from 'react'
-import Layout from '../components/layout/Layout'
+import React from 'react';
+import Layout from '../components/layout/Layout';
 import Newcard from './Newcard';
 import Popularproject from './Popularproject';
-import Testmonial from './testmonial';
+import Testmonial from './Testmonial';
 import Gallery from './Gallery';
 
 

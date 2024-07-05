@@ -5,7 +5,7 @@ import Header from '../components/layout/Header';
 
 
 
- const productGrid = () => {
+ const ProductGrid = () => {
  
   return (
     <>
@@ -24,4 +24,4 @@ import Header from '../components/layout/Header';
   )
 }
 
-export default productGrid;
+export default ProductGrid;
